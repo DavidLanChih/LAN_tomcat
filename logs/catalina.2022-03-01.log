@@ -288,3 +288,43 @@
 01-Mar-2022 21:58:19.238 資訊 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 01-Mar-2022 21:58:19.253 資訊 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 01-Mar-2022 21:58:19.253 資訊 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 21:58:40.175 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.72
+01-Mar-2022 21:58:40.182 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 1 2021 15:15:33 UTC
+01-Mar-2022 21:58:40.183 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.72.0
+01-Mar-2022 21:58:40.184 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+01-Mar-2022 21:58:40.184 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Mar-2022 21:58:40.185 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Mar-2022 21:58:40.185 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_311\jre
+01-Mar-2022 21:58:40.186 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_311-b11
+01-Mar-2022 21:58:40.186 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Mar-2022 21:58:40.187 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\xampp\tomcat
+01-Mar-2022 21:58:40.188 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\xampp\tomcat
+01-Mar-2022 21:58:40.188 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\xampp\tomcat\conf\logging.properties
+01-Mar-2022 21:58:40.189 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Mar-2022 21:58:40.189 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Mar-2022 21:58:40.190 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Mar-2022 21:58:40.190 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Mar-2022 21:58:40.191 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\xampp\tomcat
+01-Mar-2022 21:58:40.191 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\xampp\tomcat
+01-Mar-2022 21:58:40.192 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\xampp\tomcat\temp
+01-Mar-2022 21:58:40.193 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\ibm\gsk8\lib64;C:\Program Files\ibm\gsk8\bin;C:\Program Files\Java\jdk-14\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_311\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\LAN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\LAN\AppData\Roaming\npm;C:\Users\LAN\AppData\Local\GitHubDesktop\bin;.]
+01-Mar-2022 21:58:40.351 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 21:58:40.458 資訊 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Mar-2022 21:58:40.472 資訊 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 684 ms
+01-Mar-2022 21:58:40.557 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Mar-2022 21:58:40.557 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.72]
+01-Mar-2022 21:58:40.566 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\.git]
+01-Mar-2022 21:58:40.807 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\.git] has finished in [240] ms
+01-Mar-2022 21:58:40.808 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\docs]
+01-Mar-2022 21:58:40.828 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\docs] has finished in [20] ms
+01-Mar-2022 21:58:40.828 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\examples]
+01-Mar-2022 21:58:41.123 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\examples] has finished in [295] ms
+01-Mar-2022 21:58:41.124 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\host-manager]
+01-Mar-2022 21:58:41.149 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\host-manager] has finished in [25] ms
+01-Mar-2022 21:58:41.149 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\manager]
+01-Mar-2022 21:58:41.181 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\manager] has finished in [32] ms
+01-Mar-2022 21:58:41.182 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\ROOT]
+01-Mar-2022 21:58:41.201 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\ROOT] has finished in [19] ms
+01-Mar-2022 21:58:41.204 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 21:58:41.213 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in 740 ms
+01-Mar-2022 21:59:11.736 資訊 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/.git]
