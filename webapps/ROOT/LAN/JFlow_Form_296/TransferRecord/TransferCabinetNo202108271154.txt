@@ -1,0 +1,1 @@
+S_mw296.jsp 表單:375403 錯誤訊息:接近 'limit' 之處的語法不正確。Invalid state, the ResultSet object is closed.

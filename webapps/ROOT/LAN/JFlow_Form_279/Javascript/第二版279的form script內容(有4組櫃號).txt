@@ -1,0 +1,100 @@
+<script language='javascript'>
+
+//---------------------第3-4關選項反灰-------------------------
+Frm.tmp_FD_Data15.disabled=true;  
+Frm.tmp_FD_Data16.disabled=true;  
+//---------------(最多9筆共18櫃)<搭配欄位事件>-----------------
+for(n=5;n<24;n++)
+{
+  function op(n)
+  {	
+    window.open("/cy/supplier.jsp?Field=FD_Data"+n,"", "width=500,height=178");
+  }
+}
+
+
+function beforeCheckData()
+{
+//-------------------防呆設定: (第一欄位必填)-------------------
+  if(Frm.FD_Data1.value=='')
+  {
+    document.getElementById('FD_Data1').innerText='';
+    alert('請選擇經辦人!');
+    Frm.FD_Data1.focus();
+    return false;
+  }
+//-------------防呆設定: 供應商(for迴圈判斷是否有值)-------------
+  if(Frm.FD_Data5.value=='') 
+  {
+    alert('請輸入: 1.原供應商!');
+    Frm.FD_Data5.focus();
+    return false;
+  }
+  for(i=0;i<4;i++)                         // i=表單有i組櫃號轉移
+  {
+    if( document.getElementById('FD_Data'+(i*2+5)).value!='')
+    {
+      if(document.getElementById('FD_Data'+(i*2+5)).value=='')
+      {
+        alert('請輸入: '+(i+1)+'.原供應商!');
+        document.getElementById('FD_Data'+(i*2+5)).focus();
+        return false;
+      }
+      if(document.getElementById('FD_Data'+(i*2+6)).value=='')
+      {
+        alert('請輸入: '+(i+1)+'.轉移供應商!');
+        document.getElementById('FD_Data'+(i*2+6)).focus();
+        return false;
+      }
+    }
+  }
+//-----------防呆設定: (原供應商與轉移供應商不能一樣)------------
+
+  for(i=0;i<4;i++)                         // i=表單有i組櫃號轉移
+  {
+    if(document.getElementById('FD_Data'+(i*2+5)).value!=''&&document.getElementById('FD_Data'+(i*2+6)).value!='')
+    {
+      if(document.getElementById('FD_Data'+(i*2+5)).value==document.getElementById('FD_Data'+(i*2+6)).value)
+      {
+        alert('項次'+(i+1)+': 原供應商與轉移供應商不能一樣!');
+        document.getElementById('FD_Data'+(i*2+6)).focus();
+        return false;
+      }
+    }
+  }
+//-----------防呆設定: (不同組的原供應商不能一樣)----------
+  if(document.getElementById('FD_Data5').value!='')
+  {  
+    for(i=0;i<3;i++)                         // (最大值設定為總櫃號組數-1)
+    {  
+      if(document.getElementById('FD_Data'+(i*2+7)).value!=''&&document.getElementById('FD_Data'+(i*2+7)).value==document.getElementById('FD_Data5').value)    
+      {
+        alert('項次'+(i+2)+'.不同組的原供應商不能一樣!');
+        document.getElementById('FD_Data'+(i*2+7)).focus();
+        return false;
+      }
+    }
+  }
+//-----------防呆設定: (不同組的轉移供應商不能一樣)----------
+  if(document.getElementById('FD_Data6').value!='')
+  {  
+    for(i=0;i<3;i++)                         // (最大值設定為總櫃號組數-1)
+    { 
+      if(document.getElementById('FD_Data'+(i*2+8)).value!=''&&document.getElementById('FD_Data'+(i*2+8)).value==document.getElementById('FD_Data6').value)    
+      {
+        alert('項次'+(i+2)+'.不同組的轉移供應商不能一樣!');
+        document.getElementById('FD_Data'+(i*2+8)).focus();
+        return false;
+      }
+    }
+  } 
+
+return true;
+}
+
+
+
+function afterCheckData()
+{
+}
+</script>

@@ -1,0 +1,78 @@
+<script language='javascript'>
+Frm.tmp_FD_Data19.disabled=true;
+Frm.tmp_FD_Data20.disabled=true;
+//------------------------------------帶入櫃號----------------------------------------
+function SetAgnet1(id)
+{		
+  var USID=trim(Frm.FD_Data1.value.split(",")[0]);window.open('/cy/getCountData3.jsp?Field=FD_Data'+id,'A','width=200,height=200,scrollbar=1');
+}
+//---------------------i為第幾組(選擇供應商後只可讀不可改)-------------------
+for(i=0;i<5;i++)                    
+{
+  document.getElementById('FD_Data'+(i*3+3)).setAttribute("readOnly",'true');
+}
+
+function beforeCheckData()
+{
+  if(Frm.FD_Data1.value=='') {alert('請選擇經辦人!');Frm.tmp_FD_Data1.focus();return false;}
+  if(Frm.FD_Data2.value=='') {alert('請輸入分機!');Frm.FD_Data2.focus();return false;}
+  if(Frm.FD_Data3.value=='') {alert('請輸入1.供應商櫃號!');Frm.FD_Data3.focus();return false;}
+//-----------------------------------不同組的供應商不能一樣-------------------------------    
+  for(i=1; i<5; i++)
+  {
+    if(document.getElementById('FD_Data'+(i*3+3)).value!='')
+    {
+      for(j=0; j<i; j++)
+      {
+        if(document.getElementById('FD_Data'+(i*3+3)).value == document.getElementById('FD_Data'+(j*3+3)).value)
+        {
+          alert('項次'+(i+1)+' 與 項次'+(j+1)+'：不能選擇同樣供應商!');
+          document.getElementById('FD_Data'+(i*3+3)).focus();
+          return false;
+        }
+      }
+    }
+  }
+//-----------------有供應商櫃號就要有異動說明，且關閉日期不能超過30日-------------------
+  for(i=0;i<5;i++)           
+  {
+    if( document.getElementById('FD_Data'+(i*3+3)).value!='')
+    {      
+      var Y=new Date().getFullYear();
+      var M=new Date().getMonth()+1;
+      var D=new Date().getDate();
+      var dd=Y+"/"+M+"/"+D;                                                                                //取申請當下的格林威治年月日   
+      var d1=Date.parse(dd);                                                                                //將申請日期變成毫秒
+      var strData4 = document.getElementById('FD_Data'+(i*3+4)).value;
+      var d4=Date.parse(strData4);                                                                      //將關閉日期變成毫秒
+      var diff_day;
+      diff_day = (d4.valueOf()-d1.valueOf())/(1000*60*60*24);	   
+      if(diff_day > 30 )
+      {
+        alert('項次'+(i+1)+'：關閉日期不能超過30天');
+        document.getElementById('FD_Data'+(i*3+4)).focus();
+        return false;
+      }
+      if(diff_day < 0 )
+      {
+        alert('項次'+(i+1)+'：關閉日期不能在今天日期以前');
+        document.getElementById('FD_Data'+(i*3+4)).focus();
+        return false;
+      }
+      if(document.getElementById('FD_Data'+(i*3+5)).value=='') 
+      {
+        alert('項次'+(i+1)+'：請選擇異動說明!');
+        document.getElementById('FD_Data'+(i*3+5)).focus();
+        return false;
+      }
+    }
+  }
+return true;
+}
+
+function afterCheckData()
+{
+
+return true;
+}
+</script>

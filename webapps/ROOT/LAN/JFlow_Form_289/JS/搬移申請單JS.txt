@@ -1,0 +1,82 @@
+<script language='javascript'>
+Frm.tmp_FD_Data16.disabled =true;
+Frm.tmp_FD_Data17.disabled =true;
+for(i=0;i<3;i++)                    //----------------i為第幾組(選擇供應商後只可讀不可改)-----------------
+{
+  document.getElementById('FD_Data'+(i*4+3)).setAttribute("readOnly",'true');
+  document.getElementById('FD_Data'+(i*4+4)).setAttribute("readOnly",'true');
+}
+function SetAgnet1(id)
+{		
+  var USID=trim(Frm.FD_Data1.value.split(",")[0]);window.open('/cy/getCountData2.jsp?Field=FD_Data'+id+'&USID='+USID,'A','width=200,height=200,scrollbar=1');
+}
+
+
+function beforeCheckData()
+{
+  if(Frm.FD_Data1.value=='') {alert('請選擇經辦人!');Frm.tmp_FD_Data1.focus();return false;}
+  if(Frm.FD_Data2.value=='') {alert('請輸入分機!');Frm.FD_Data2.focus();return false;}
+  if(Frm.FD_Data3.value=='') {alert('請輸入1.原供應商!');Frm.FD_Data3.focus();return false;}
+
+
+  for(i=0;i<3;i++)           //-----------------有原供應商就要有轉移供應商和異動說明，且生效日期不能超過30日-------------------
+  {
+    if( document.getElementById('FD_Data'+(i*4+3)).value!='')
+    {
+      if(document.getElementById('FD_Data'+(i*4+4)).value=='') {alert('項次'+(i+1)+'：請輸入1.轉移供應商!');document.getElementById('FD_Data'+(i*4+4)).focus();return false;}
+      var strData5 = document.getElementById('FD_Data'+(i*4+5)).value;
+      var day =new Date();
+      var Datace5 = document.getElementById('FD_Data'+(i*4+5));
+      var diff_day;
+      var d1=new Date(strData5);
+      diff_day = (d1.valueOf()-day.valueOf())/(1000*60*60*24);	   
+      if(diff_day > 30 ) {alert('生效日期不能超過30天');Datace5.focus();return false;}
+      if(document.getElementById('FD_Data'+(i*4+6)).value=='') {alert('項次'+(i+1)+'：請選擇異動說明!');document.getElementById('FD_Data'+(i*4+6)).focus();return false;}
+      }
+  }
+
+
+  for(i=0;i<3;i++)               //------------------原供應商與轉移供應商不能一樣------------------          
+  {
+    if(document.getElementById('FD_Data'+(i*4+3)).value!=''&&document.getElementById('FD_Data'+(i*4+4)).value!='')
+    {
+      if(document.getElementById('FD_Data'+(i*4+3)).value==document.getElementById('FD_Data'+(i*4+4)).value)
+      {
+        alert('項次'+(i+1)+': 原供應商與轉移供應商不能一樣!');
+        document.getElementById('FD_Data'+(i*4+4)).focus();
+        return false;
+      }
+    }
+  }
+
+
+//-----------------------------------不同組的原供應商不能一樣-------------------------------    
+  for(i=0;i<2;i++)                         // (最大值設定為總櫃號組數-1)
+  {  
+    if(document.getElementById('FD_Data'+(i*4+7)).value!=''&&document.getElementById('FD_Data'+(i*4+7)).value==document.getElementById('FD_Data3').value)    
+    {
+      alert('項次'+(i+2)+'.不同組的原供應商不能一樣!');
+      document.getElementById('FD_Data'+(i*4+7)).focus();
+      return false;
+    }
+  }
+ 
+//-----------------------------------不同組的轉移供應商不能一樣-------------------------------    
+  for(i=0;i<2;i++)                         // (最大值設定為總櫃號組數-1)
+  {  
+    if(document.getElementById('FD_Data'+(i*4+8)).value!=''&&document.getElementById('FD_Data'+(i*4+8)).value==document.getElementById('FD_Data4').value)    
+    {
+      alert('項次'+(i+2)+'.不同組的轉移供應商不能一樣!');
+      document.getElementById('FD_Data'+(i*4+8)).focus();
+      return false;
+    }
+  }
+return true;
+}
+
+function afterCheckData()
+{
+
+return true;
+}
+</script>

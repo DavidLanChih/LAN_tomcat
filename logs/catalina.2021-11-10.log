@@ -1,0 +1,116 @@
+10-Nov-2021 10:41:26.855 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.72
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 1 2021 15:15:33 UTC
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.72.0
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_311\jre
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_311-b11
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\xampp\tomcat
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\xampp\tomcat
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\xampp\tomcat\conf\logging.properties
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\xampp\tomcat
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\xampp\tomcat
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\xampp\tomcat\temp
+10-Nov-2021 10:41:26.877 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\LAN\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;.]
+10-Nov-2021 10:41:27.078 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:27.172 資訊 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2021 10:41:27.178 資訊 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 752 ms
+10-Nov-2021 10:41:27.272 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2021 10:41:27.272 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.72]
+10-Nov-2021 10:41:27.278 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\docs]
+10-Nov-2021 10:41:27.549 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\docs] has finished in [271] ms
+10-Nov-2021 10:41:27.549 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\examples]
+10-Nov-2021 10:41:28.359 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\examples] has finished in [810] ms
+10-Nov-2021 10:41:28.359 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\host-manager]
+10-Nov-2021 10:41:28.397 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\host-manager] has finished in [38] ms
+10-Nov-2021 10:41:28.397 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\manager]
+10-Nov-2021 10:41:28.428 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\manager] has finished in [31] ms
+10-Nov-2021 10:41:28.428 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\ROOT]
+10-Nov-2021 10:41:28.459 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\ROOT] has finished in [31] ms
+10-Nov-2021 10:41:28.459 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:28.481 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in 1297 ms
+10-Nov-2021 10:41:28.528 資訊 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+10-Nov-2021 10:41:28.544 資訊 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:28.588 資訊 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Nov-2021 10:41:28.604 資訊 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:28.604 資訊 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.72
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 1 2021 15:15:33 UTC
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.72.0
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_311\jre
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_311-b11
+10-Nov-2021 10:41:53.578 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\xampp\tomcat
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\xampp\tomcat
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\xampp\tomcat\conf\logging.properties
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\xampp\tomcat
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\xampp\tomcat
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\xampp\tomcat\temp
+10-Nov-2021 10:41:53.594 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\LAN\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;.]
+10-Nov-2021 10:41:53.732 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:53.810 資訊 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2021 10:41:53.810 資訊 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 583 ms
+10-Nov-2021 10:41:53.895 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2021 10:41:53.895 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.72]
+10-Nov-2021 10:41:53.895 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\docs]
+10-Nov-2021 10:41:54.126 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\docs] has finished in [231] ms
+10-Nov-2021 10:41:54.126 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\examples]
+10-Nov-2021 10:41:54.380 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\examples] has finished in [254] ms
+10-Nov-2021 10:41:54.380 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\host-manager]
+10-Nov-2021 10:41:54.411 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\host-manager] has finished in [31] ms
+10-Nov-2021 10:41:54.411 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\manager]
+10-Nov-2021 10:41:54.434 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\manager] has finished in [23] ms
+10-Nov-2021 10:41:54.434 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\ROOT]
+10-Nov-2021 10:41:54.449 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\ROOT] has finished in [15] ms
+10-Nov-2021 10:41:54.465 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 10:41:54.465 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in 648 ms
+10-Nov-2021 15:03:18.577 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.72
+10-Nov-2021 15:03:18.593 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 1 2021 15:15:33 UTC
+10-Nov-2021 15:03:18.593 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.72.0
+10-Nov-2021 15:03:18.593 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_311\jre
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_311-b11
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\xampp\tomcat
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\xampp\tomcat
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\xampp\tomcat\conf\logging.properties
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\xampp\tomcat
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\xampp\tomcat
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\xampp\tomcat\temp
+10-Nov-2021 15:03:18.608 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\LAN\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;.]
+10-Nov-2021 15:03:18.749 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 15:03:18.811 資訊 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Nov-2021 15:03:18.827 資訊 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 593 ms
+10-Nov-2021 15:03:18.905 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Nov-2021 15:03:18.905 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.72]
+10-Nov-2021 15:03:18.905 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\docs]
+10-Nov-2021 15:03:19.124 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\docs] has finished in [219] ms
+10-Nov-2021 15:03:19.140 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\examples]
+10-Nov-2021 15:03:19.592 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\examples] has finished in [452] ms
+10-Nov-2021 15:03:19.592 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\host-manager]
+10-Nov-2021 15:03:19.623 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\host-manager] has finished in [31] ms
+10-Nov-2021 15:03:19.623 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\manager]
+10-Nov-2021 15:03:19.639 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\manager] has finished in [16] ms
+10-Nov-2021 15:03:19.639 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\xampp\tomcat\webapps\ROOT]
+10-Nov-2021 15:03:19.670 資訊 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\xampp\tomcat\webapps\ROOT] has finished in [31] ms
+10-Nov-2021 15:03:19.670 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Nov-2021 15:03:19.670 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in 846 ms

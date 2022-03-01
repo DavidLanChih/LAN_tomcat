@@ -1,0 +1,99 @@
+<script language='javascript'>
+
+//---------------第3-4關選項反灰------------------
+Frm.tmp_FD_Data11.disabled=true;  
+Frm.tmp_FD_Data12.disabled=true;  
+//-----------(最多9筆共18櫃)彈跳視窗--------------
+for(n=5;n<24;n++)
+{
+  function op(n)
+  {	
+    window.open("/cy/supplier.jsp?Field=FD_Data"+n,"", "width=500,height=178");
+  }
+}
+
+
+function beforeCheckData()
+{
+//---------------------防呆設定: (第一欄位必填)----------------------
+  if(Frm.FD_Data1.value=='')
+  {
+    document.getElementById('FD_Data1').innerText='';
+    alert('請選擇經辦人!');
+    Frm.FD_Data1.focus();
+    return false;
+  }
+//-------------防呆設定: 供應商(for迴圈判斷是否有值)-------------
+  if(Frm.FD_Data5.value=='') 
+  {
+    alert('請輸入: 1.原供應商!');
+    Frm.FD_Data5.focus();
+    return false;
+  }
+  for(i=0;i<2;i++)
+  {
+    if( document.getElementById('FD_Data'+(i*2+5)).value!='')
+    {
+      if(document.getElementById('FD_Data'+(i*2+5)).value=='')
+      {
+        alert('請輸入: '+(i+1)+'.原供應商!');
+        document.getElementById('FD_Data'+(i*2+5)).focus();
+        return false;
+      }
+      if(document.getElementById('FD_Data'+(i*2+6)).value=='')
+      {
+        alert('請輸入: '+(i+1)+'.轉移供應商!');
+        document.getElementById('FD_Data'+(i*2+6)).focus();
+        return false;
+      }
+    }
+  }
+//-----------防呆設定: (原供應商與轉移供應商不能一樣)----------
+  if(Frm.FD_Data5.value!=''&&Frm.FD_Data6.value!='')    
+  {
+    if(Frm.FD_Data5.value==Frm.FD_Data6.value)
+    {
+      alert('項次1: 原供應商與轉移供應商不能一樣!');
+      Frm.FD_Data6.focus();
+      return false;
+    }
+  }
+  if(Frm.FD_Data7.value!=''&&Frm.FD_Data8.value!='')    
+  {
+    if(Frm.FD_Data7.value==Frm.FD_Data8.value)
+    {
+      alert('項次2: 原供應商與轉移供應商不能一樣!');
+      Frm.FD_Data8.focus();
+      return false;
+    }
+  }
+//-----------防呆設定: (1.原供應商與2.原供應商不能一樣)----------
+  if(Frm.FD_Data5.value!=''&&Frm.FD_Data7.value!='')    
+  {
+    if(Frm.FD_Data5.value==Frm.FD_Data7.value)
+    {
+      alert('項次1.原供應商 與 項次2.原供應商不能一樣!');
+      Frm.FD_Data7.focus();
+      return false;
+    }
+  }
+//-----------防呆設定: (1.轉移供應商與2.轉移供應商不能一樣)----------
+  if(Frm.FD_Data6.value!=''&&Frm.FD_Data8.value!='')    
+  {
+    if(Frm.FD_Data6.value==Frm.FD_Data8.value)
+    {
+      alert('項次1.轉移供應商 與 項次2.轉移供應商不能一樣!');
+      Frm.FD_Data8.focus();
+      return false;
+    }
+  }
+
+return true;
+}
+
+
+
+function afterCheckData()
+{
+}
+</script>

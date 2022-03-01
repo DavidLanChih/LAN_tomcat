@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>哈囉</title>
+  </head>
+  <body>
+    <input type='text' name='input1' id='input1' value='這是c.html的input內文' size=50>
+	<input type='button' name='input2' id='input2' value='查看目前登入的IP' onclick='hi()'>
+  </body>
+</html>
+<script type="text/javascript">
+var _parentWin = document.getElementById('input1').value ;                     //宣告母視窗
+function hi()
+{
+	window.open("IP.jsp","testwindow","height=300px, width=500px");
+};
+</script>
